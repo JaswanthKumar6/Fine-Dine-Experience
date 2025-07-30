@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fine Dine Experience</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#location">Location</a>
+    <a href="#blog">Blog</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <h1>Welcome to Fine Dine Experience</h1>
+      <p>Discover exquisite flavors and unforgettable moments.</p>
+      <button class="btn-book">Book a Table</button>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Fine Dine Experience has been serving exquisite cuisine since 2000. Our mission is to create memorable dining moments with fresh ingredients and passionate chefs.</p>
+    </section>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+    <button class="filter-btn" data-filter="non-vegetarian">Non-Vegetarian</button>
+    <button class="filter-btn" data-filter="special">Special</button>
+  </div>
+  <div class="menu-items">
+    <div class="menu-item" data-category="vegetarian">
+      <img src="https://kannanskitchen.com/wp-content/uploads/2023/01/DSC_4737-500x500.jpg" alt="Paneer Tikka" />
+      <h3>Paneer Tikka</h3>
+      <p>Grilled cottage cheese cubes marinated in spices and yogurt.</p>
+      <div class="price">₹250</div>
+    </div>
+    <div class="menu-item" data-category="vegetarian">
+      <img src="https://sitaramdiwanchand.com/blog/wp-content/uploads/2024/04/Image-1-1-1024x576.webp" alt="Chole Bhature" />
+      <h3>Chole Bhature</h3>
+      <p>Spicy chickpea curry served with deep-fried bread.</p>
+      <div class="price">₹180</div>
+    </div>
+    <div class="menu-item" data-category="vegetarian">
+      <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/03/Vegetable-Biryani.jpg" alt="Vegetable Biryani" />
+      <h3>Vegetable Biryani</h3>
+      <p>Fragrant rice cooked with mixed vegetables and spices.</p>
+      <div class="price">₹220</div>
+    </div>
+    <div class="menu-item" data-category="vegetarian">
+      <img src="https://www.chitskitchen.com/wp-content/uploads/2021/12/Post-3-01.jpeg" alt="Vegetable Manchurian" />
+      <h3>Vegetable Manchurian</h3>
+      <p>Deep-fried vegetable balls tossed in tangy Indo-Chinese sauce.</p>
+      <div class="price">₹200</div>
+    </div>
+
+    <div class="menu-item" data-category="non-vegetarian">
+      <img src="https://i.ytimg.com/vi/XEyQiQRb2ns/maxresdefault.jpg" alt="Butter Chicken With Butter Naan" />
+      <h3>Butter Chicken With Butter Naan</h3>
+      <p>Classic Indian chicken curry cooked in creamy tomato gravy.</p>
+      <div class="price">₹350</div>
+    </div>
+    <div class="menu-item" data-category="non-vegetarian">
+      <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2016/03/1-14.jpg" alt="Grilled Fish" />
+      <h3>Grilled Fish</h3>
+      <p>Fresh fish fillet marinated and grilled to perfection.</p>
+      <div class="price">₹400</div>
+    </div>
+    <div class="menu-item" data-category="non-vegetarian">
+      <img src="https://static.toiimg.com/thumb/53192600.cms?width=1200&height=900" alt="Mutton Rogan Josh" />
+      <h3>Mutton Rogan Josh</h3>
+      <p>Slow-cooked mutton curry with rich aromatic spices.</p>
+      <div class="price">₹450</div>
+    </div>
+
+    <div class="menu-item" data-category="special">
+      <img src="https://www.cookwithkushi.com/wp-content/uploads/2016/04/best_easy_simple_chicken_tikka_biryani_recipe.jpg" alt="Chef's Biryani" />
+      <h3>Chef's Biryani</h3>
+      <p>Aromatic basmati rice cooked with tender meat and special spices.</p>
+      <div class="price">₹500</div>
+    </div>
+    <div class="menu-item" data-category="special">
+      <img src="https://i.ytimg.com/vi/jx0vr2cghf0/maxresdefault.jpg" alt="Tandoori Platter" />
+      <h3>Tandoori Platter</h3>
+      <p>Mixed grill of tandoori chicken, kebabs, and seekh rolls.</p>
+      <div class="price">₹600</div>
+    </div>
+    <div class="menu-item" data-category="special">
+      <img src="https://www.servingdumplings.com/wp-content/uploads/2024/02/thai-coconut-shrimp-curry-tn-e7872bca.jpg" alt="Seafood Curry" />
+      <h3>Seafood Curry</h3>
+      <p>Spicy and tangy curry with fresh seafood and coconut milk.</p>
+      <div class="price">₹550</div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Gallery Section with Images -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <p>Take a glimpse at our elegant dining space and delicious dishes through our photo gallery.</p>
+      
+      <div class="gallery-grid">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/a2/49/c9/dining-room.jpg?w=900&h=500&s=1" alt="Elegant dining area" />
+        <img src="https://thumbs.dreamstime.com/z/cozy-restaurant-interior-greenery-natural-light-ambiance-cozy-restaurant-interior-greenery-natural-light-375641048.jpg" alt="Cozy restaurant ambiance" />
+        <img src="https://media.istockphoto.com/id/2165606027/photo/fried-shrimp.jpg?s=612x612&w=0&k=20&c=VxvXVcYUIGmVOIHim4Sg7VuRSW4Bn2vqX6mwVNPj1P4=" alt="Gourmet dishes served" />   
+        <img src="https://www.ledyilighting.com/wp-content/uploads/2024/06/Try-Smokey-Warm-Lights.jpg" alt="Warm lighting in restaurant" />
+        <img src="https://i.pinimg.com/736x/69/51/ff/6951ff7bd1bf407b7e2506747184e820.jpg" alt="Restaurant bar area" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqq44-OB230SsJ5HjHr9KLhs_TjytEphgOg&s" alt="Fine dine setup"/>
+
+    </section>
+
+ <section id="reservation">
+  <h2>Book a Table</h2>
+  <form id="reservation-form" novalidate>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number" />
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="guests">Number of Guests:</label>
+    <select id="guests" name="guests" required>
+      <option value="" disabled selected>Select guests</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5+">5+</option>
+    </select>
+
+    <input type="submit" value="Reserve Now" />
+  </form>
+  <div id="confirmation-message"></div>
+</section>
+
+
+    <!-- Location -->
+  <section id="location">
+  <h2>Our Location</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83992485648!2d77.06889993732256!3d28.527280220205987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2e76a2b19bf%3A0xcca0a9a91750478b!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1672534476000!5m2!1sen!2sin"
+    width="600"
+    height="350"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</section>
+
+
+    <!-- Blog -->
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p>Stay updated with our latest events, recipes, and restaurant news on our blog.</p>
+    </section>
+  </div>
+
+  <!-- Social Footer -->
+  <footer class="social-footer">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

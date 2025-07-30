@@ -1,0 +1,64 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.btn-book').addEventListener('click', () => {
+      alert('Thank you for your interest! Online booking will be available soon.');
+    });
+  });
+  // Wait for the DOM to load
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const menuItems = document.querySelectorAll('.menu-item');
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+  
+        const filter = button.getAttribute('data-filter');
+  
+        menuItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('reservation-form');
+    const confirmation = document.getElementById('confirmation-message');
+    const dateInput = document.getElementById('date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      // Basic form validation using HTML5 constraints
+      if (!form.checkValidity()) {
+        confirmation.style.color = 'red';
+        confirmation.textContent = 'Please fill out the form correctly.';
+        form.reportValidity();
+        return;
+      }
+  
+      // Check if selected date is today or later
+      const selectedDate = new Date(dateInput.value);
+      if (selectedDate < new Date(today)) {
+        confirmation.style.color = 'red';
+        confirmation.textContent = 'Please select a valid date.';
+        return;
+      }
+  
+      // Here you can add sending reservation data to server or email
+  
+      confirmation.style.color = '#00ff00';
+      confirmation.textContent = 'Thank you for your reservation! We will contact you shortly.';
+      form.reset();
+    });
+  });
+  
+  
